@@ -1,0 +1,73 @@
+#TopNavigation{
+  width:100%;
+  height: 100px;
+  background: #00204A;
+  z-index: 1;
+  transition:.4s,top;
+  top:0px;
+  left: 0px;
+  position:fixed;
+  box-shadow: 0 0 5px #272727;
+}
+#TopNavigation main{
+  width:1226px;
+  color: rgb(255, 255, 255);
+  line-height:100px;
+  margin: 0 auto;
+}
+#LeftTopNavigation{
+  float: left;
+}
+#RightTopNavigation{
+  float: right;
+  width: 46%;
+}
+#TopNavigationLogo{
+  float: left;
+}
+#TopNavigationCompany{
+  float: left;
+}
+#TopNavigationCompany a{
+  text-decoration: none;
+  color:white;
+}
+#RightTopNavigation ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px;
+}
+#RightTopNavigation ul li{
+  float: left;
+  cursor:pointer;
+  font-size: 1.2em;
+  width: 25%;
+  text-align: center;
+}
+#RightTopNavigation ul li div{
+  height: 3px;
+  width: 60%;
+  margin: 0 auto;
+  background: white;
+  opacity: 0;
+  transition:all 0.3s;
+}
+#news:hover div{
+  opacity: 100;
+  transition:all 0.3s;
+}
+#pro:hover div{
+  opacity: 100;
+  transition:all 0.3s;
+}
+#case:hover div{
+  opacity: 100;
+  transition:all 0.3s;
+}
+#about:hover div{
+  opacity: 100;
+  transition:all 0.3s;
+}
+/*顶部导航条*/

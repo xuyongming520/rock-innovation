@@ -1,0 +1,68 @@
+body{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  padding:0;  
+  border:0;   
+  margin:0;
+}
+*{
+  box-sizing: border-box;
+}
+#caseLine{
+  opacity: 1!important;
+}
+/*顶部导航*/
+#middle{
+  margin-top:120px;
+  width: 100%;
+  min-height: calc(100vh - 290px);
+  margin-bottom: 20px;
+}
+#middle main{
+  width:1226px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.caseList{
+  width: 1226px;
+  max-height:840px; 
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap:wrap;
+}
+.caseBox{
+  flex:0 1;
+  border: 1px solid #cfcfcf;
+  margin: 10px;
+  padding: 10px 12px;
+  transition: all .35s;
+  cursor: pointer;
+  line-height: 20px;
+  transition: all 0.35s;
+  color:rgb(44, 62, 80);
+}
+.caseBox a{
+  color:rgb(44, 62, 80);
+  text-decoration: none;
+}
+.caseBox:hover{
+  box-shadow:gray 1px 1px 8px;
+}
+.caseBox .casePic img{
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+.caseFont p{
+  max-width: 260px;
+  margin: 12px 0px;
+  font-size: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

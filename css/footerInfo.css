@@ -1,0 +1,44 @@
+#FooterInfo{
+  background:#ecf0f1;
+  height: 150px; 
+  display: flex;
+}
+#FooterInfo main{
+  min-width:1226px;
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+  background:#ecf0f1;
+}
+#TopFooterInfo{
+  height: 70%;
+  padding-top:10px;
+}
+#BottomFooterInfo{
+  font-size:.8em;
+  height: 15%;
+}
+#LeftFooterInfo{
+  height: 100%;
+  float: left;
+  width: 45%
+}
+#LeftFooterInfo div{
+  float: left;
+  width: 25%;
+  font-size: 1em;
+}
+#RightFooterInfo{
+  height: 100%;
+  float: right;
+}
+#FooterInfoLogo{
+  float: left;
+}
+#FooterInfoCompany{
+  float: left;
+}
+#policeLogo{
+  cursor:pointer;
+}
+/*底部信息*/

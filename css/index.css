@@ -1,0 +1,496 @@
+body{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  padding:0;  
+  border:0;   
+  margin:0;
+}
+#middle{
+  margin-top:120px;
+  width: 100%;
+  min-height: calc(100vh - 250px);
+  margin-bottom: 20px;
+}
+#middle main{
+  width:1226px;
+  margin: 0 auto;
+}
+
+.slideShow{
+  width:1226px;
+  height: 440px;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #464576;
+}
+.slideShow ul,ol,li,div {
+	margin: 0;
+	padding: 0;
+}
+.slideShow ul,ol {
+	list-style: none;
+}
+.ft-carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.ft-carousel .carousel-inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.ft-carousel .carousel-inner .carousel-item {
+	float: left;
+	height: 100%;
+}
+.ft-carousel .carousel-item img {
+	width: 100%;
+}
+.ft-carousel .carousel-indicators {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+  font-size: 0;
+}
+.ft-carousel .carousel-indicators span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	margin: 0 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.ft-carousel .carousel-indicators span.active {
+	background-color: #de3a3a;
+}
+.ft-carousel .carousel-btn {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 45px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+.ft-carousel .carousel-prev-btn {
+	left: 0;
+	background: url(../img/prev.png) no-repeat;
+}
+.ft-carousel .carousel-next-btn {
+	right: 0;
+	background: url(../img/next.png) no-repeat;
+}
+/*轮播图*/
+#slogan{
+  text-align: center;
+  font-size: 28px;
+  padding: 50px 0px 40px 0px;
+}
+#en{
+  margin-top: 10px;
+}
+#know{
+  margin-top: 20px;
+  font-size:14px;
+}
+#know a{
+  text-decoration: none;
+  color:#409EFF;
+}
+/*公司简介*/
+#message{
+  padding: 40px 0px 60px 0px;
+}
+#messageBox{
+  margin-right:3%;
+  width: 24%;
+  left:0;
+  display: inline-block;
+  background-color: #ecf0f1;
+  padding: 32px 40px 16px 40px;
+}
+#messageBox:last-child{
+  margin-right:0;
+}
+#title{
+  font-family: "helvetica neue", tahoma, "PingFang SC", "microsoft yahei", arial, "hiragino sans gb", sans-serif;
+  font-size:1.2em;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#content{
+  width: 100%;
+  font-size:1em;
+  margin-bottom:10px;
+  border-bottom:#cccecec2 1px solid;
+  padding: 10px 0px 10px 0px;;
+}
+#time{
+  color:rgb(171, 173, 173);
+  display:block;
+  font-size:15px;
+  margin-top:10px;
+}
+#content a{
+  text-decoration: none;
+  color: #000;
+}
+#content a:hover{
+  color:#409EFF;
+  transition: all 0.3s ;
+}
+#content:last-child{
+  border:none;
+}
+.pro{
+  background: white;
+  height: 500px;
+  box-sizing: border-box;
+}
+.leftPro{
+  width:55%;
+  height: 100%;
+  float: left;
+}
+.scene{
+  width: 100%;
+  height:65%;
+  /* background: #0099CC; */
+  padding:10px 5px 5px 5px;
+  transition:all 0.3s; 
+  position: relative;
+  border: #cfcfcf 1px solid;
+}
+.scene:hover{
+  box-shadow:gray 4px 4px 10px;
+  transform: translate(-3px,-3px);
+}
+.proTitle{
+  text-align: center;
+  color:#1f3c88;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top:20px;
+  margin-bottom: 15px;
+}
+.data{
+  width: 100%;
+  height:27%;
+  /* background:#0066CC; */
+  padding:10px 5px 5px 5px;
+  transition:all 0.3s; 
+  position: relative;
+  margin-top: 9px;
+  border: #cfcfcf 1px solid;
+}
+.data:hover{
+  box-shadow: gray 4px 4px 10px;
+  transform: translate(-3px,-3px);
+}
+.rightPro{
+  width:45%;
+  height: 100%;
+  float:right;
+}
+.system{
+  padding:10px 5px 5px 5px;
+  height:97%;
+  transition:all 0.3s; 
+  position: relative;
+  margin-left: 20px;
+  border: #cfcfcf 1px solid;
+}
+.system:hover{
+  box-shadow:gray 4px 4px 10px;
+  transform: translate(-3px,-3px);
+}
+.firPro{
+  height: 100%;
+  width: 100%;
+}
+.instrument{
+  font-size: 1.0em;
+  color:black;
+  text-align: center;
+  border: gray 1px solid;
+  width:180px;
+  height: 100px;
+  line-height: -10px;
+  margin: 30px 0px 0px 40px;
+  float: left;
+  border-radius: 12px 12px 12px 12px;
+  padding-top:15px;
+}
+.PLM{
+  background: #0681ff;
+  font-size: 0.9em;
+  color:white;
+  width:90%;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 2px 5px 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.Ta{
+  background: #0681ff;
+  font-size: 0.9em;
+  color:white;
+  width:90%;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 2px 5px 2px;
+  margin: 0 auto;
+}
+.appBox{
+  width:150px;
+  height: 150px;
+  float: left;
+}
+.app{
+  font-size: 1.0em;
+  color:black;
+  text-align: center;
+  border: gray 1px solid;
+  width:150px;
+  height: 55px;
+  padding-top:28px;
+  margin: 30px 0px 0px 40px;
+  float: left;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.plane{
+  font-size: 1.0em;
+  color:black;
+  text-align: center;
+  border: gray 1px solid;
+  width:180px;
+  height: 70px;
+  padding-top:10px;
+  margin:10px 0px 0px 40px;
+  float: left;
+  border-radius: 12px 12px 12px 12px;
+  position: relative;
+  left:0px
+}
+.planeButton{
+  background: #0681ff;
+  font-size: 0.9em;
+  color:white;
+  width:90%;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 2px 5px 2px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.explain{
+  color:black;
+  text-align: center;
+  float:left;
+  margin-left:200px;
+  margin-top:-20px;
+}
+.explainFont{
+  margin-bottom: 10px;
+}
+.passOne{
+  width:100px;
+  margin:50px 0px 0px 50px;
+  float:left;
+  color:black;
+  font-size: 0.9em;
+}
+.passOne .fontOne{
+  margin-top:20px;
+}
+.passTwo{
+  height: 50%;
+  color:black;
+  font-size: 0.9em;
+}
+.passTwo .math{
+  width:10px;
+  margin-left:115px;
+  float:left;
+}
+.passTwo .mathOne{
+  width:10px;
+  margin-left:20px;
+  float:left;
+}
+.cloudData{
+  color:black;
+  margin-left:90px;
+  float:left;
+}
+.fontTwo{
+  color:black;
+  font-weight: bolder;
+}
+#intCom{
+  margin-top:-5px;
+  margin-left: 205px;
+  float: left;
+}
+.passThree{
+  width:100px;
+  margin:30px 0px 0px 50px;
+  float:left;
+  color:black;
+  font-size: 0.9em;
+  margin-left:-40px
+}
+.fontThree{
+  margin-top:45px;
+  margin-left:-10px;
+}
+.leftSystem{
+  height:100%;
+  float:left;
+  width: 40%;
+}
+.platform{
+  color:black;
+  font-weight: bolder;
+  text-align: center;
+  float:left;
+  margin-top:55px;
+  width: 100%;
+}
+.passFour{
+  color:black;
+  font-size: 0.9em;
+  margin-top:110px;
+}
+.passFour .math{
+  width:10px;
+  margin-left:80px;
+  float:left;
+}
+.passFour .mathOne{
+  width:10px;
+  margin-left:40px;
+  float:left;
+}
+.basic{
+  color:black;
+  float:left;
+  margin-top:30px;
+  width: 100%;
+  text-align: center;
+}
+.passFive{
+  color:black;
+  font-size: 0.9em;
+  margin-top:110px;
+}
+.passFive .math{
+  width:10px;
+  margin-left:80px;
+  margin-top:20px;
+  float:left;
+}
+.passFive .mathOne{
+  width:10px;
+  margin-top:20px;
+  margin-left:40px;
+  float:left;
+}
+.rightSystem{
+  height:70%;
+  float:left;
+  width: 40%;
+  border:3px gray dashed;
+  margin-top:20px;
+  padding:20px 5px 5px 5px;
+}
+.analysis{
+  color:black;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.5em;
+}
+.rightFont{
+  color:black;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top:60px;
+}
+
+.arrow{
+  width:100px;
+  position: absolute;
+}
+.line{
+  width:90px;
+  height:3px;
+  background:#226089;
+  float:left;
+  margin-top:6px;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border-top:8px solid transparent;
+  border-left: 8px solid #226089;
+  border-bottom: 8px solid transparent;
+  float:left;
+}
+/*向右箭头*/
+.arrowDown{
+  height:100px;
+  position: absolute;
+}
+.lineDown{
+  width:3px;
+  height:90px;
+  background:#226089;
+  margin-left:6px;
+}
+.triangleDown{
+  width: 0;
+  height: 0;
+  border-right:8px solid transparent;
+  border-top: 8px solid #226089;
+  border-left: 8px solid transparent;
+}
+/*向下箭头*/
+.arrowLeft{
+  width:100px;
+  position: absolute;
+}
+.lineLeft{
+  width:90px;
+  height:3px;
+  background:#226089;
+  float:left;
+  margin-top:6px;
+}
+.triangleLeft{
+  width: 0;
+  height: 0;
+  border-top:8px solid transparent;
+  border-right: 8px solid #226089;
+  border-bottom: 8px solid transparent;
+  float:left;
+}
+/*向左箭头*/
+.triangleTop{
+  width: 0;
+  height: 0;
+  border-right:8px solid transparent;
+  border-bottom: 8px solid #226089;
+  border-left: 8px solid transparent;
+  margin-left:192px; 
+  margin-top:-255px;
+}
+/*向上箭头*/

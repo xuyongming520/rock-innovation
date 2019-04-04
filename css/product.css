@@ -1,0 +1,149 @@
+html{
+  line-height: 1.15;
+  font-family: sans-serif;
+}
+body{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  line-height: 1.5;
+  padding:0;  
+  border:0;   
+  margin:0;
+  min-width: 1250px;
+}
+*{
+  box-sizing: border-box;
+}
+#proLine{
+  opacity: 1!important;
+}
+/*顶部导航*/
+#middle{
+  margin-top:120px;
+  width: 100%;
+  min-height: calc(100vh - 270px);
+}
+#middle main{
+  width:1226px;
+  margin: 10px auto;
+}
+
+.searchBox{
+  margin: 10px auto;
+  height: 100px;
+  width: 52%;
+  line-height: 100px;
+}
+.searchGroup{
+  line-height: normal;
+  display: inline-table;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 5px;
+}
+.search{
+  line-height: normal;
+  display: inline-table;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.search>select{
+  border: 1px solid #dcdfe6;
+  color: #909399;
+  background:#f5f7fa; 
+  outline: none;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+  padding-left: 20px;
+}
+.search>input:first-of-type {
+  width: 435px;
+	height: 40px; 
+	border: 1px solid #ccc;
+	font-size: 16px;
+  outline: none;
+  padding-left: 10px;
+}
+.search>input:first-of-type:focus {
+  border: 1px solid #4D78C4;
+  padding-left: 10px;
+}
+.search>input:last-of-type {
+  width: 100px;
+  height: 40px; 
+  position: absolute;
+  background: #4D78C4;
+  border: 1px solid #4D78C4;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.class{
+  margin: 0px auto;
+  background: #ecf0f1;
+  padding: 20px 0px;
+}
+
+.proList{
+  width: 1226px; 
+  margin-top:20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap:wrap;
+}
+.proBox{
+  width: 290px;
+  height: 380px;
+  flex:0 1;
+  margin: 6px;
+  transition: all .35s;
+  cursor: pointer;
+  line-height: 20px;
+  transition: all 0.35s;
+  border: 1px #cfcfcf solid;
+}
+.proBox a{
+  color:rgb(44, 62, 80);
+  text-decoration: none;
+}
+.proBox:hover{
+  /* box-shadow:gray 1px 1px 8px; */
+  border: 1px solid #00204A; 
+}
+.proBox:hover .proPic{
+  /* box-shadow:gray 1px 1px 8px; */
+  transform: scale(1.1,1.1)
+}
+.proBox .proPic{
+  transition: all 0.35s;
+  padding: 46px;
+  padding-bottom: 30px;
+}
+.proBox .proPic img{
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+  border: 0px;
+}
+.proBox .proFont p{
+  margin: 10px auto 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.proBox .proFont .detail{
+  margin: 20px 0px;
+  font-size: 16px;
+  margin:0px 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
