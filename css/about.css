@@ -15,12 +15,132 @@ body{
 }
 /*顶部导航*/
 #middle{
-  margin-top:120px;
+  margin-top:100px;
   width: 100%;
-  min-height: calc(100vh - 270px);
+  min-height: calc(100vh - 250px);
 }
 #middle main{
   width:1226px;
   margin: 0 auto;
 }
+.introduction{
+  padding: 40px 200px;
+}
+.introduction>h2{
+  font-size: 32px;
+  line-height: 48px;
+  color: #333;
+  font-weight: 400;
+}
+.introduction>p{
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  margin: 16px 0 0;
+}
+.line{
+  top:80px;
+  position: relative;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  height: 1px;
+  background-color: rgba(0,0,0,.06);
+}
+/*公司简介*/
 
+.course{
+  padding: 60px 200px 50px;
+}
+.course>h2{
+  font-size: 32px;
+  line-height: 48px;
+  color: #333;
+  font-weight: 400;
+}
+.course .history{
+  padding-left: 56px;
+}
+.course .history .item{
+  position: relative;
+  width: 100%;
+}
+.course .history .item>div{
+  display: inline-block;
+  vertical-align: top;
+}
+.course .history .item .date{
+  position: relative;
+  width: 136px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+.course .history .item .date::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: -6px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #3b3b3b;
+  z-index: 2;
+}
+.course .history .item .date>div{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.course .history .item .date .year{
+  font-size: 18px;
+  top: -8px;
+}
+.course .history .item .date .month{
+  top: -13px;
+}
+.course .history .item .date .month span:first-child{
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 8px;
+  font-weight: bold;
+}
+.course .history .item .info{
+  position: relative;
+  width: calc(100% - 180px);
+  padding: 0 24px 16px;
+  border-left: 1px solid #999;
+  z-index: 1;
+}
+.course .history .item .info>div:hover{
+  margin-bottom:20px; 
+  border:1px solid #000;
+  border-bottom:2px solid #000;
+}
+.course .history .item .info>div{
+  position: relative;
+  top: -24px;
+  padding: 16px 16px 36px;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: margin ease .5s;
+}
+/*公司历程*/
+
+.contact{
+  padding: 60px 200px 50px;
+}
+.contact>h2{
+  font-size: 32px;
+  line-height: 48px;
+  color: #333;
+  font-weight: 400;
+}
+.contactDetail h3{
+  line-height: 48px;
+  color: #333;
+  font-weight: 200;
+}

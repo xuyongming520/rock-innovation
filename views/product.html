@@ -8,8 +8,10 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../css/product.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/footerInfo.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/topNavigation.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/zxf_page.css"/>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="../js/request.js"></script>
+  
 </head>
 <body>
   <header id="TopNavigation">
@@ -40,84 +42,44 @@
       <div class="searchBox">
         <div class="searchGroup">
           <form action="" class="search">
-            <select>
-              <option value ="all">全部</option>
-              <option value ="hard">硬件</option>
-              <option value ="soft">软件</option>
+            <select class="searchClass" onchange="selectSearch()">
+                <option value ="all" selected>全部</option>
+                <option value ="hard">硬件</option>
+                <option value ="soft">软件</option>
             </select>
-            <input type="text" placeholder="请输入内容">
-            <input type="button" >
+            <input type="text" placeholder="请输入内容" class="content">
+            <input type="button" value="   搜索" onclick="search(classId,name)">
           </form>
         </div>
       </div>
-      <div class="class">12</div>
+      <section class="class">
+        <div class="title">分类:</div>
+        <div class="classDetail">
+          <div class="proClass classFont" id="all"><div class="line"></div>全部</div>
+          <div class="proClass" id="hard" onclick="hard()"><div class="line"></div>硬件</div>
+          <div class="proClass" id="soft" onclick="soft()"><div class="line"></div>软件</div>
+        </div>
+      </section>
       <div class="proList">
-        <div class="proBox">
-          <a>
-            <div class="proPic">
-              <img src="../assets/images/boxed-water-is-better-1464053-unsplash.jpg">
-            </div>
-            <div class="proFont">
-              <p>123</p>
-              <div class="detail">123hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="proBox">
-          <a>
-            <div class="proPic">
-              <img src="../assets/images/boxed-water-is-better-1464053-unsplash.jpg">
-            </div>
-            <div class="proFont">
-              <p>123</p>
-              <div class="detail">123hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="proBox">
-          <a>
-            <div class="proPic">
-              <img src="../assets/images/boxed-water-is-better-1464053-unsplash.jpg">
-            </div>
-            <div class="proFont">
-              <p>123</p>
-              <div class="detail">123hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="proBox">
-          <a>
-            <div class="proPic">
-              <img src="../assets/images/boxed-water-is-better-1464053-unsplash.jpg">
-            </div>
-            <div class="proFont">
-              <p>123</p>
-              <div class="detail">123hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
       </div>
+      <div class="zxf_pagediv"></div>
     </main>
   </div>
   <footer id="FooterInfo">
     <main>
       <div id="TopFooterInfo">
         <div id="LeftFooterInfo">
-          <div>
-            资源共享
+          <div id="fNews">
+            <a>新闻资讯</a>
           </div>
-          <div>
-            新闻资讯
+          <div id="fPro">
+            <a>产品信息</a>
           </div>
-          <div>
-            产品信息
+          <div id="fCase" >
+            <a>应用案例</a>
           </div>
-          <div>
-            关于我们
+          <div id="fAbout">
+            <a>关于我们</a>
           </div>
         </div>
         <div id="RightFooterInfo">
@@ -137,6 +99,10 @@
       </div>
     </main>
   </footer>
-  <script src="../js/index.js"></script>
+  <script src="../js/root.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/zxf_proPage.js"></script>
 </body>
 </html>

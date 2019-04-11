@@ -66,8 +66,7 @@
 				obj.on("click","a.preBtn",function(){
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur-1});
-					page(current);
-					
+					page(current,classId);		
 					zp.addhtml(obj,current);
 					if (typeof(pageinit.backfun)=="function") {
 						pageinit.backfun(current);
@@ -78,7 +77,7 @@
 				obj.on("click","a.zxfPageNum",function(){
 					var cur = parseInt($(this).text());
 					var current = $.extend(pageinit, {"current":cur});
-					page(current);
+					page(current,classId);
 					zp.addhtml(obj,current);
 					if (typeof(pageinit.backfun)=="function") {
 						pageinit.backfun(current);
@@ -89,7 +88,7 @@
 				obj.on("click","a.nextBtn",function(){
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur+1});
-					page(current);
+					page(current,classId);
 					zp.addhtml(obj,current);
 					if (typeof(pageinit.backfun)=="function") {
 						pageinit.backfun(current);
@@ -100,7 +99,7 @@
 				obj.on("click","span.zxFokBtn",function(){
 					var cur = parseInt($("input.zxfInput").val());
 					var current = $.extend(pageinit, {"current":cur});
-					page(current);
+					page(current,classId);
 					zp.addhtml(obj,{"current":cur,"pageNum":pageinit.pageNum});
 					if (typeof(pageinit.backfun)=="function") {
 						pageinit.backfun(current);

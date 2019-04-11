@@ -28,12 +28,19 @@
   width: 25%;
   font-size: 1em;
 }
+#LeftFooterInfo div a{
+  cursor: pointer;
+}
+#LeftFooterInfo div a:hover{
+  text-decoration:underline;
+}
 #RightFooterInfo{
   height: 100%;
   float: right;
 }
 #FooterInfoLogo{
   float: left;
+  cursor: pointer;
 }
 #FooterInfoCompany{
   float: left;

@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/topNavigation.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/footerInfo.css">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/request.js"></script>
 </head>
 <body>
   <header id="TopNavigation">
@@ -39,12 +40,6 @@
       <div class="slideShow">
         <div class="ft-carousel" id="carousel_1">
           <ul class="carousel-inner">
-            <li class="carousel-item"><img src="img/a1.jpg" /></li>
-            <li class="carousel-item"><img src="img/a2.jpg" /></li>
-            <li class="carousel-item"><img src="img/a3.jpg" /></li>
-            <li class="carousel-item"><img src="img/a4.jpg" /></li>
-            <li class="carousel-item"><img src="img/a5.jpg" /></li>
-            <li class="carousel-item"><img src="img/a6.jpg" /></li>
           </ul>
         </div>
       </div>
@@ -56,7 +51,7 @@
         Make Rock Engineering
         More Convenient, More Intelligent!
         </div>
-        <div id="know"><a href="#">了解更多 ></a></div>
+        <div id="know"><a href="./views/about.html">了解更多 ></a></div>
       </div>
 
       <div class="pro">
@@ -233,22 +228,24 @@
     <main>
       <div id="TopFooterInfo">
         <div id="LeftFooterInfo">
-          <div>
-            资源共享
-          </div>
-          <div>
+          <div onclick="window.location.href = 'views/news.html'" style="cursor:pointer;">
             新闻资讯
-          </div>
-          <div>
+          </div >
+          <div onclick="window.location.href = 'views/product.html'" style="cursor:pointer;">
             产品信息
           </div>
-          <div>
+          <div onclick="window.location.href = 'views/case.html'" style="cursor:pointer;">
+            应用案例
+          </div>
+          <div onclick="window.location.href = 'views/about.html'" style="cursor:pointer;">
             关于我们
           </div>
         </div>
         <div id="RightFooterInfo">
-          <div id="FooterInfoLogo">LOGO岩创科技</div>
-          <div id="FooterInfoCompany"></div>
+          <div id="FooterInfoLogo">
+            LOGO岩创科技
+          </div>
+          <div id="FooterInfoCompany" onclick="window.location.href = 'index.html'"></div>
         </div>
       </div>
       <div id="BottomFooterInfo">
@@ -264,10 +261,12 @@
       </div>
     </main>
   </footer>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/ft-carousel.min.js"></script>
   <script type="text/javascript">
 	  $("#carousel_1").FtCarousel();
   </script>
+  
 </body>
 </html>

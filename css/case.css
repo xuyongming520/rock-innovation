@@ -54,12 +54,12 @@ body{
   box-shadow:gray 1px 1px 8px;
 }
 .caseBox .casePic img{
-  width: 260px;
+  width: 360px;
   height: 260px;
   object-fit: cover;
 }
 .caseFont p{
-  max-width: 260px;
+  max-width: 360px;
   margin: 12px 0px;
   font-size: 22px;
   text-overflow: ellipsis;

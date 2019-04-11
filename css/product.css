@@ -23,7 +23,7 @@ body{
 #middle{
   margin-top:120px;
   width: 100%;
-  min-height: calc(100vh - 270px);
+  min-height: calc(100vh - 280px);
 }
 #middle main{
   width:1226px;
@@ -51,22 +51,29 @@ body{
 }
 .search>select{
   border: 1px solid #dcdfe6;
+  border-right: 0;
   color: #909399;
   background:#f5f7fa; 
   outline: none;
   width: 100px;
   height: 40px;
   line-height: 40px;
-  /* appearance: none;
+  appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none; */
-  padding-left: 20px;
+  -moz-appearance: none;
+  padding-left: 15px;
+  background: #f5f7fa url("../assets/images/icons8-expand-arrow-filled-50.png") no-repeat 90%; 
+}
+.search>select option{
+  height: 50px !important;
+  line-height: 50px !important;
+  text-align-last: center !important;
 }
 .search>input:first-of-type {
   width: 435px;
 	height: 40px; 
 	border: 1px solid #ccc;
-	font-size: 16px;
+	font-size: 14px;
   outline: none;
   padding-left: 10px;
 }
@@ -78,19 +85,61 @@ body{
   width: 100px;
   height: 40px; 
   position: absolute;
-  background: #4D78C4;
+  /* background: #4D78C4; */
   border: 1px solid #4D78C4;
+  border-left: 0;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
+  background: #4D78C4 url("../assets/images/icons8-search-filled-50.png") no-repeat 20px 14px;
+  cursor: pointer;
 }
-
+.searchNone{
+  line-height: 350px;
+  text-align: center;
+  font-size: 28px;
+  color: #909399;
+  margin: 0 auto;
+}
 .class{
+  background: #f3f3f3;
+  width: 100%;
   margin: 0px auto;
-  background: #ecf0f1;
-  padding: 20px 0px;
+  padding: 20px 20px 5px;
+  /* height: 100% */
 }
-
+.title{
+  width: 90px;
+  margin-bottom: 10px;
+}
+.classDetail{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+}
+.proClass:hover{
+  color:#4D78C4;
+}
+.classFont{
+  color:#4D78C4;
+  font-weight: bold;
+}
+.proClass{
+  max-width: 245px;
+  width: 190px;
+  height: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.proClass>div{
+  width:3px;
+  height: 70%;
+  background: #909399;
+  float: left;
+  margin-right: 20px;
+}
 .proList{
   width: 1226px; 
   margin-top:20px;
@@ -101,7 +150,7 @@ body{
   flex-wrap:wrap;
 }
 .proBox{
-  width: 290px;
+  width: 295px;
   height: 380px;
   flex:0 1;
   margin: 6px;

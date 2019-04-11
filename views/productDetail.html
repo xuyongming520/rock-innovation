@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>岩创科技有限公司</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="../css/newsDetail.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/productDetail.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/footerInfo.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/topNavigation.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/zxf_page.css"/>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="../js/request.js"></script>
-  <script src="../js/newsDetail.js"></script>
+  <script src="../js/productDetail.js"></script>
 </head>
 <body>
   <header id="TopNavigation">
@@ -38,10 +39,37 @@
   </header>
   <div id="middle">
     <main>
-      <div class="title"></div>
-      <div class="time"></div>
-      <div class="article">
-        <section></section>
+      <div class="product">
+        <div class="proImg">
+          <div class="proBigImg"></div>
+          <div class="proImgWrap">
+            <ul class="imgItem">
+            </ul>
+          </div>
+        </div>
+        <div class="proInfo">
+          <div class="title"></div>
+          <div class="smallTitle"><p></p></div>
+          <div class="company"></div>
+          <div class="cmt" id="class">
+            <div>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</div>
+            <div></div>
+          </div>
+          <div class="cmt"  id="model">
+            <div>型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:</div>
+            <div></div>
+          </div>
+          <div class="cmt"  id="time">
+            <div>上市时间:</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="productDetail">
+        <div class="detailTitle">
+          <p>商品详情</p>
+        </div>
+        <div class="detail"></div>
       </div>
     </main>
   </div>
@@ -80,5 +108,8 @@
     </main>
   </footer>
   <script src="../js/root.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/zxf_proPage.js"></script>
 </body>
 </html>

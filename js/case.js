@@ -9,7 +9,7 @@ function caseList(){
     type:'GET',
     dataType:"json",
     data:{
-      limit:8,
+      limit:6,
       page:1,
       name:"",
     },
@@ -35,7 +35,6 @@ function caseList(){
         }
       });
       $(".zxfInput").val(current);
-      
     },
     error:function(){
       alert("获取错误")
@@ -51,7 +50,7 @@ function page(page){
     type:'GET',
     dataType:"json",
     data:{
-      limit:8,
+      limit:6,
       page:page.current,
       name:"",
     },

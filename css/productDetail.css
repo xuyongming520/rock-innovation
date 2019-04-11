@@ -1,0 +1,138 @@
+body{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  padding:0;  
+  border:0;   
+  margin:0;
+}
+*{
+  box-sizing: border-box;
+}
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#proLine{
+  opacity: 1 !important;
+}
+#middle{
+  margin-top:120px;
+  width: 100%;
+  min-height: calc(100vh - 290px);
+  margin-bottom: 20px;
+}
+#middle main{
+  width:1226px;
+  margin: 0 auto;
+}
+.product{
+  width: 100%;
+  min-height: 550px;
+}
+.product .proImg{
+  float: left;
+  width: 550px;
+}
+.product .proImg .bigImg{
+  margin: 20px 100px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.product .proImg .proImgWrap{
+  position: relative;
+}
+.product .proImg .proImgWrap ul{
+  margin-left: -16px;
+  white-space: nowrap;
+  position: relative;
+  font-size: 0;
+  text-align: center;
+}
+.product .proImg .proImgWrap ul li{
+  display: inline-block;
+  margin: 12px 0 0 16px;
+  /* padding-top: 12px; */
+  border: 2px solid #fff;
+}
+.product .proImg .proImgWrap ul li a{
+  float: left;
+  position: relative;
+  width: 66px;
+  height: 66px;
+  overflow: hidden;
+  /* transition: all 0.3s; */
+  
+}
+.product .proImg .proImgWrap ul li a img{
+  position: relative;
+  max-width: 70px;
+  max-height: 70px;
+  left: -2px;
+  top: -2px;
+  object-fit: cover;
+}
+/*商品图片*/
+
+.product .proInfo{
+  float: left;
+  width: 566px;
+  height: 510px;
+  padding: 30px 50px;
+}
+.product .proInfo .title{
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.product .proInfo .smallTitle{
+  font-size: 15px;
+  color:#b0b0b0;
+}
+.product .proInfo .company{
+  font-size: 18px;
+  line-height: 1;
+  padding-top:16px;
+  padding-bottom:22px;
+  color:#4D78C4;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+}
+.product .proInfo .cmt{
+  padding-top: 60px;
+}
+.product .proInfo .cmt div:first-of-type{
+  line-height: 1;
+  font-size: 18px;
+  float: left;
+  font-weight: bold
+}
+.product .proInfo .cmt div:last-of-type{
+  float: left;
+  line-height: 1;
+  font-size: 18px;
+  padding-left: 50px;
+  color:#666;
+}
+/*商品介绍*/
+
+.productDetail{
+  width: 90%;
+  min-height: 150px;
+  padding: 10px 30px;
+  /* margin: 50px; */
+}
+.productDetail .detailTitle{
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #606266;
+  font-weight: bold;
+}
+.productDetail .detail{
+  border-top:1px solid #cfcfcf;
+}
+/*商品详情*/
+

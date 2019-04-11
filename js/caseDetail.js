@@ -23,7 +23,6 @@ function caseDetail(pkId){
       var time=0,clock=0;
       time=res.data.releaseTime.substring(0,10);
       clock=res.data.releaseTime.substring(11,16),
-      console.log(res.data)
       $(".pic").append("<img src='"+res.data.cover+"'>")
       $(".title").append(res.data.title),
       $(".detail").append("作者："+res.data.author+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间："+time+" "+clock);
