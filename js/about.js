@@ -32,7 +32,6 @@ function history(){
     dataType:"json",
     success:function(res){
       var year=0,month=0,i=0;
-      console.log(res.data[0].releaseDate)
       for(i=0;i<res.data.length;i++){
         year=res.data[i].releaseDate.substring(0,4);
         month=res.data[i].releaseDate.substring(5,7);

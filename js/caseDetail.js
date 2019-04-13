@@ -1,6 +1,5 @@
 $(function(){
   var pkId=getUrlParam('pkId');
-  console.log(pkId)
   caseDetail(pkId);
 })
 

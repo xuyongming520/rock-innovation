@@ -23,7 +23,6 @@ function selectSearch(){
   else if($(".searchClass").val()=="soft"){
     classId=2;
   }
-  console.log(classId)
   return classId;
 }
 /*下拉分类 */

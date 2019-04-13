@@ -9,6 +9,7 @@ body{
 }
 *{
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 #newsLine{
   opacity: 1!important;

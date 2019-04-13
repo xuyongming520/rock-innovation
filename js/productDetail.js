@@ -35,7 +35,6 @@ function proDetail(pkId){
         $(".proImgWrap ul li").mouseover(
           function(){
             var _this=$(this),index=$(this).index();
-            console.log(index);
             _this.css("border-color","#000").siblings('li').css("border-color","#fff");
             $(".proBigImg").empty();
             $(".proBigImg").append("<img class='bigImg' src='"+res.data.pathList[index]+"'>")

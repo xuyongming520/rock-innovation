@@ -72,7 +72,6 @@ function newsList(){
                 +month[i]+"/"
                 +day[i]+"</span>";
         $(".newsList").append(list[i]) 
-        console.log(res.data.list[i].pkId)
       };
       $(".zxf_pagediv").createPage({
         pageNum: pageNum,

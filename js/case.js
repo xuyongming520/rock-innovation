@@ -17,7 +17,6 @@ function caseList(){
       var i=0,index=res.data.list.length,pageNum=res.data.totalPage,current=res.data.currentPage;
       var list=new Array(),time=new Array();
       $(".caseList").empty() 
-      console.log(res.data.list[i].cover)
       for(i=0;i<index;i++){
         time[i]=res.data.list[i].releaseTime.substring(0,10);
         list[i]="<div class='caseBox'><a target='_blank' href='caseDetail.html?pkId="
