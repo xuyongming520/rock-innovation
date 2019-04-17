@@ -1,8 +1,26 @@
 $(function(){
+  init()
   business()
   company()
   science()
 })
+
+function isIE() { //ie?
+  if (!!window.ActiveXObject || "ActiveXObject" in window)
+   return true;
+  else
+   return false;
+}
+
+function init(){
+  if(isIE()==true){
+    $(".container").hide()
+    $(".iePro").append("<img src='assets/images/pro.png' style='width:1226px;height:630px;'>")
+  }
+  else{
+    $(".container").show()
+  }
+}
 
 function business(){
   $.ajax({
@@ -30,7 +48,6 @@ function business(){
       };
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }
@@ -60,7 +77,6 @@ function company(){
       };
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }
@@ -91,7 +107,6 @@ function science(){
       };
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }

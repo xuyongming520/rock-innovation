@@ -4,6 +4,7 @@ $(function(){
 })
 
 function about(){
+  jQuery.support.cors = true;
   $.ajax({
     url:baseURL+'/company/detail',
     async:true,
@@ -19,12 +20,12 @@ function about(){
       $("#mail h3").append("电子邮箱:      "+res.data.email)
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }
 
 function history(){
+  jQuery.support.cors = true;
   $.ajax({
     url:baseURL+'/company/develop/list',
     async:true,
@@ -43,7 +44,6 @@ function history(){
       }
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }

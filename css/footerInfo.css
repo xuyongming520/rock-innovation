@@ -3,7 +3,7 @@
   height: 150px; 
   display: flex;
 }
-#FooterInfo main{
+#FooterInfo .main{
   min-width:1226px;
   margin: 0 auto;
   height: 150px;

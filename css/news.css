@@ -21,7 +21,7 @@ body{
   min-height: calc(100vh - 290px);
   margin-bottom: 20px;
 }
-#middle main{
+#middle .main{
   width:1226px;
   margin: 0 auto;
 }
@@ -49,10 +49,10 @@ body{
   height: 120px;
   background: #f4f4f4;
   margin-bottom: 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
 }
 .listTop:hover .listLeft span{
   color:#337ab7;

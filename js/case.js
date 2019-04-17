@@ -25,6 +25,7 @@ function caseList(){
                 +res.data.list[i].title+"</p><div class='author'>"
                 +res.data.list[i].author+"</div><time>"
                 +time[i]+"</time></div></a></div>"
+
         $(".caseList").append(list[i]) 
       };
       $(".zxf_pagediv").createPage({
@@ -36,7 +37,6 @@ function caseList(){
       $(".zxfInput").val(current);
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }
@@ -70,7 +70,6 @@ function page(page){
       $(".zxfInput").val(current);
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }

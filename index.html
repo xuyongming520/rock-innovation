@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+  <meta  charset="utf-8" name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
   <title>岩创科技有限公司</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/topNavigation.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/footerInfo.css">
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="js/request.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
   <header id="TopNavigation">
-    <main>
+    <div class="main">
       <div id="LeftTopNavigation">
         <div id="TopNavigationLogo">LOGO</div>
         <div id="TopNavigationCompany">岩创科技</div>
@@ -33,10 +34,10 @@
             <div id="aboutLine"></div>关于我们
           </li>
         </ul>
-    </main>
+    </div>
   </header>
   <div id="middle">
-    <main>
+    <div class="main">
       <div class="slideShow">
         <div class="ft-carousel" id="carousel_1" style="margin:0 atuo">
           <div class="objective">
@@ -55,108 +56,112 @@
         </div>
         <div id="know"><a href="./views/about.html">了解更多 ></a></div>
       </div>
-
-      <div class="pro">
-        <div class="leftPro">
-          <div class="scene">
-            <div class="proTitle">现场数据采集</div>
-                <div class="instrument">便携式仪器
-                  <div class="PLM">点荷载仪</div>
-                  <div class="Ta">三轴仪</div>
-                </div>
-                  <div class="passOne">
-                    <div>岩块强度</div>
-                    <div class="arrow">
-                      <div class="line"></div>
-                      <div class="triangle"></div>
-                    </div>
-                    <div class="fontOne">结构面强度</div>
-                  </div>
-                <div class="appBox"><div class="app"><div class="Ta">APP电子野簿</div></div></div>
-            <div class="plane">
-              <div class="planeButton">无人机航拍</div>
-              <div class="Ta">三维激光扫描</div>
-              </div>
-            <div class="explain">
-              <div class="explainFont">数据整合与规范化</div>
-              <div class="explainFont">用户权限管理</div>
-              <div class="explainFont">项目结构化管理</div>
+      <div class="iePro"></div>
+      <div class="container">
+          <div class ="item collect">
+            <div class="name collectTt">现场数据采集</div>
+            <div class="proFont bagTt">背包实验室</div>
+            <div class="proFont phoneTt">手机电子野簿</div>
+            <div class="bagPic"><img src="assets/images/bagPic.png"></div>
+            <div class="intensity proFont">岩块与<br>结构面强度
+              <div class="arrow"><div class="line"></div><div class="triangleRight"></div></div>
+            </div>
+            <div class="phonePic"><img src="assets/images/phonePic.png"></div>
+            <div class="measureTt">非接触式测量</div>
+            <div class="measurePic"><img src="assets/images/measurePic.png"></div>
+          </div>
+          <div class ="item transfer">
+            <div class="name transferTt">数据传输积累</div>
+            <div class="original proFont">
+              <div class="smallTt">原始数据</div>
+              <div class="arrow"><div class="line"></div><div class="triangleRight"></div></div>
+            </div>
+            <div class="show proFont">
+              <div class="arrow"><div class="triangleLeft"></div><div class="line"></div></div>
+              <div class="smallTt" style="margin-top:10px;">结果展示</div>
+            </div>
+            <div class="transferPic"><img src="assets/images/transferPic.jpg"></div>
+            <div class="read proFont">
+              <div class="smallTt">数据读取</div>
+              <div class="arrow"><div class="line"></div><div class="triangleRight"></div></div>
+            </div>
+            <div class="store proFont">
+              <div class="arrow"><div class="triangleLeft"></div><div class="line"></div></div>
+              <div class="smallTt" style="margin-top:10px;">结果存储</div>
             </div>
           </div>
-          <div class="data">
-            <div class="passTwo">
-              <div class="math">点数解</div>
-              <div class="arrowDown" style="margin-top:-35px;margin-left:130px">
-                <div class="lineDown"></div>
-                <div class="triangleDown"></div>
+          <div class ="item Analysis">
+            <div class="name AnalysisTt">工程问题分析</div>
+            <div class="AnalysisPic"><img src="assets/images/AnalysisPic.png"></div>
+            <div class="AnalysisArrow">
+              <div class="arrow">
+                <div class="line" style="margin:0;"></div>
+                <div class="lineVer" style="float:left;margin:0;"></div>
+                <div class="triangleDown" style="float:right"></div>
               </div>
-              <div class="mathOne">云据算</div>
+            </div>
+            <div class="basic">
+              <div class="arrowVer"><div class="lineVer"></div><div class="triangleDown"></div></div>
+            </div>
+            <div class="grade proFont">
+              <div>岩体质量分级</div>
+              <div>工程问题分析</div>
+              <div>工程数值计算</div>
+            </div>
+            <div class="basicNum proFont">基础参数</div>
+            <div class="project">
+              <div class="arrowVer"><div class="lineVer" style="height:70px"></div><div class="triangleDown"></div></div>
+            </div>
+            <div class="proNum proFont">
+              工程参数
+              <div class="arrow" style="top:-130px;width: 150px;margin-left:-140px;">
+                <div class="lineVer" style="float:left;margin:0;height:140px"></div>
+                <div class="line" style="margin:0;width:200px"></div>
+                <div class="triangleUp" style="float:left;margin-top:-150px;margin-left:-6px"></div>
+              </div>
+            </div>
+            <div class="proAna proFont">工程分析模块
+              <div class="arrow"><div class="line"></div><div class="triangleRight"></div></div>
             </div>
             <div class="threeD">
-              <div class="cloudData">三维点云数据</div>
-                <div class="arrow" style="margin-left:250px">
-                  <div class="line"></div>
-                  <div class="triangle"></div>
-                </div>
-              <div class="fontTwo" id="intCom">岩体结构参数智能解算</div>
+              <div class="arrowVer"><div class="lineVer"></div><div class="triangleDown"></div></div>
             </div>
           </div>
-        </div>
-        <div class="rightPro">
-          <div class="system">
-            <div class="proTitle">岩体工程分析系统</div>
-            <div class="passThree">
-              <div style="margin-left:-10px">数据&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;读取</div>
-              <div>
-                <div class="arrow">
-                  <div class="line"></div>
-                  <div class="triangle"></div>
-                </div>
-                <div class="arrowLeft" style="margin-top:20px;margin-left:-10px">  
-                  <div class="triangleLeft"></div>
-                  <div class="lineLeft"></div>
-                </div>
-              </div>
-              <div class="fontThree">结果&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展示</div>
+          <div class="item data">
+            <div class="cloud">
+              <div class="arrowVer"><div class="lineVer" style="height:100px"></div><div class="triangleDown"></div></div>
             </div>
-             <div class="arrow" style="margin-top:345px;width:300px;margin-left:-100px">
-              <div class="line" style="width:200px"></div>
-              <div class="lineDown" style="height:250px;margin-top:-241px;margin-left:199px"></div>
-              <div class="triangleTop"></div>
-             </div>
-            <div class="leftSystem">
-              <div class="platform">云计算平台</div>
-              <div class="passFour">
-                <div class="math">分组</div>
-                <div class="arrowDown" style="margin-top:-20px;margin-left:100px">
-                  <div class="lineDown" style="height:70px"></div>
-                  <div class="triangleDown"></div>
-                </div>
-                <div class="mathOne">统计</div>
+            <div class="threeCloud proFont">三维点云数据</div>
+            <div class="cloudLine"><div class="line" style="width:40px;"></div></div>
+            <div class="cloudUp">
+              <div class="arrow" style="width: 41px;">
+                <div class="lineVer" style="float:left;margin:0;"></div>
+                <div class="line" style="margin:0;width:30px"></div>
+                <div class="triangleRight" style="float:right;margin-top:-5px"></div>
               </div>
-              <div class="basic">基础参数</div>
-              <div class="passFive">
-                <div class="math">工程参数</div>
-                <div class="arrowDown" style="margin-top:110px;margin-left:100px">
-                  <div class="lineDown" style="height:70px"></div>
-                  <div class="triangleDown"></div>
-                </div>
-                <div class="mathOne">计算</div>
-              </div>
-               <div class="basic">工程参数</div>
-               <div class="arrow" style="margin-top:205px;margin-left:150px">
-                  <div class="line" style="width:40px"></div>
-                  <div class="triangle"></div>
-                </div>
             </div>
-            <div class="rightSystem">
-              <div class="analysis">工程分析</div>
-              <div class="rightFont">岩体质量分级</div>
-              <div class="rightFont">工程问题分析</div>
-              <div class="rightFont">岩体工程数值计算</div>
+            <div class="solve proFont">岩体结构智能解算</div>
+            <div class="longTop proFont">
+              <div class="verFont ">岩体结构</div>
+              <div class="arrow" style="width:120px;height:161px;">
+                <div class="line" style="width:120px;margin:0;"></div>
+                <div class="lineVer" style="float:right;margin-top:-160px;height:160px"></div>
+                <div class="triangleUp" style="margin:-160px 110px"></div>
+              </div>
+              <div class="verFont2">原始数据</div>
+            </div>
+            <div class="cloudDown">
+              <div class="arrow" style="width: 41px;">
+                <div class="lineVer" style="float:left;margin:0;"></div>
+                <div class="line" style="width:30px;margin-top:47px"></div>
+                <div class="triangleRight" style="float:right;margin-top:40px"></div>
+              </div>
+            </div>
+            <div class="load proFont">三维地形建模</div>
+            <div class="long">
+              <div class="arrow" style="width:710px"><div class="line" style="width:550px"></div><div class="triangleRight"></div></div>
             </div>
           </div>
-        </div>
       </div>
 
       <div id="message">
@@ -173,10 +178,10 @@
           <div id="science"></div>
         </div>
       </div>
-    </main>
+    </div>
   </div>
   <footer id="FooterInfo">
-    <main>
+    <div class="main">
       <div id="TopFooterInfo">
         <div id="LeftFooterInfo">
           <div onclick="window.location.href = 'views/news.html'" style="cursor:pointer;">
@@ -210,7 +215,7 @@
           ©2018岩创科技有限公司&nbsp;&nbsp;版权所有
         </div>
       </div>
-    </main>
+    </div>
   </footer>
   
   <script src="js/jquery.min.js"></script>

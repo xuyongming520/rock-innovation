@@ -1,6 +1,7 @@
 $(function(){
   newsTopList();
   newsList();
+  newsTopPic()
 })
 
 function newsTopList(){
@@ -39,11 +40,26 @@ function newsTopList(){
       }
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }
 /*加载头部新闻列表 */
+
+function newsTopPic(){
+  $.ajax({
+    url:baseURL+'/company/upload/detail',
+    async:true,
+    type:'GET',
+    dataType:"json",
+    success:function(res){
+      $(".headLeft").empty() 
+      $(".headLeft").append("<a href='"+res.data.url+"'><img src='"+res.data.image+"'></img></a>") 
+    },
+    error:function(){
+    }
+  })
+}
+/*加载头部图片 */
 
 function newsList(){
   $.ajax({
@@ -82,7 +98,6 @@ function newsList(){
       $(".zxfInput").val(current);
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }
@@ -120,7 +135,6 @@ function page(page){
       
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }

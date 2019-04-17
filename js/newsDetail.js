@@ -27,7 +27,6 @@ function news(pkId){
       $(".article section").append(res.data.content)
     },
     error:function () { 
-      alert("获取错误")
     }
 
   })

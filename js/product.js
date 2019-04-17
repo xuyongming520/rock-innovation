@@ -77,7 +77,6 @@ function search(classId,name){
       }
     },
     error:function(){
-      alert("获取失败")
     }
   })
 }
@@ -98,7 +97,7 @@ function soft(){
   $("#hard").removeClass("classFont");
   $("#all").removeClass("classFont");
   search(classId,name);
-  return classI;
+  return classId;
 }
 
 $("#all").click(
@@ -151,7 +150,6 @@ function page(page,classId){
       $(".zxfInput").val(current);
     },
     error:function(){
-      alert("获取错误")
     }
   })
 }

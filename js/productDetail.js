@@ -27,19 +27,36 @@ function proDetail(pkId){
         category="软件"
       }      
       time=res.data.marketTime.substring(0,10);
-      $(".proBigImg").append("<img class='bigImg' src='"+res.data.pathList[0]+"'>")
+      if(res.data.video==null){
+        $(".proBigImg").append("<div class='layer'><img class='bigImg' src='"
+        +res.data.pathList[0]+"'></div>")
+      }
+      else{
+        $(".proBigImg").append("<div class='videoIcon'></div><div class='layer'><img class='bigImg' src='"
+                            +res.data.pathList[0]+"'></div>")
+      }
       for(i=0;i<index;i++){
         $(".imgItem").append("<li class='smallImage'><a><img src='"
                               +res.data.pathList[i]+"'></a></li>")
       }
-        $(".proImgWrap ul li").mouseover(
-          function(){
-            var _this=$(this),index=$(this).index();
-            _this.css("border-color","#000").siblings('li').css("border-color","#fff");
-            $(".proBigImg").empty();
-            $(".proBigImg").append("<img class='bigImg' src='"+res.data.pathList[index]+"'>")
-          }
-        )
+      $(".proImgWrap ul li").mouseover(
+        function(){
+          var _this=$(this),index=$(this).index();
+          _this.css("border-color","#000").siblings('li').css("border-color","#fff");
+          $(".layer").empty();
+          $(".videoIcon").show();
+          $(".layer").append("<img class='bigImg' src='"
+          +res.data.pathList[index]+"'>")
+        }
+      )
+      $(".videoIcon").click(
+        function () {
+          $(".layer").empty();
+          $(".videoIcon").hide();
+          $(".layer").append("<video autoplay controls height='350px' width='350px' class='video'><source src='"
+                                  +res.data.video+"' type='video/mp4'></video>")
+        }
+      )
       $(".title").append(res.data.name),
       $(".smallTitle>p").append(res.data.shortIntroduce)
       $(".company").append(res.data.company)
@@ -49,7 +66,6 @@ function proDetail(pkId){
       $(".detail").append(res.data.longIntroduce);
     },
     error:function () { 
-      alert("获取错误")
     }
   })
 }

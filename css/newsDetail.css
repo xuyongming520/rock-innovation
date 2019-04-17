@@ -20,7 +20,7 @@ body{
   min-height: calc(100vh - 330px);
   margin-bottom: 20px;
 }
-#middle main{
+#middle .main{
   width:1226px;
   margin: 0 auto;
 }
@@ -45,4 +45,5 @@ body{
   margin-top: 10px;
   margin-bottom: 50px;
 }
+
 

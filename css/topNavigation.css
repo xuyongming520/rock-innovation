@@ -2,14 +2,17 @@
   width:100%;
   height: 100px;
   background: #00204A;
-  z-index: 1;
+  z-index: 2;
   transition:.4s,top;
+  -moz-transition:.4s,top;
+  -webkit-transition:.4s,top;
+  -o-transition:.4s,top;
   top:0px;
   left: 0px;
   position:fixed;
   box-shadow: 0 0 5px #272727;
 }
-#TopNavigation main{
+#TopNavigation .main{
   width:1226px;
   color: rgb(255, 255, 255);
   line-height:100px;

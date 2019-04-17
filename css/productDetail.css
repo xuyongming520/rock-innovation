@@ -25,13 +25,22 @@ li, ul {
   min-height: calc(100vh - 290px);
   margin-bottom: 20px;
 }
-#middle main{
+#middle .main{
   width:1226px;
   margin: 0 auto;
 }
 .product{
   width: 100%;
   min-height: 550px;
+}
+.proBigImg{
+  width: 100%;
+  position: relative;  
+}
+.layer{
+  width: 100%;
+  position: relative;  
+  height:394px;
 }
 .product .proImg{
   float: left;
@@ -42,6 +51,20 @@ li, ul {
   width: 350px;
   height: 350px;
   object-fit: cover;
+}
+.product .proImg .video{
+  margin: 20px 100px;
+
+}
+.videoIcon{
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url(../assets/images/videoPro.png) no-repeat;
+  top: 75%;
+  left: 20%;
+  z-index:1;
+  cursor: pointer;
 }
 .product .proImg .proImgWrap{
   position: relative;

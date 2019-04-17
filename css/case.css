@@ -21,7 +21,7 @@ body{
   min-height: calc(100vh - 290px);
   margin-bottom: 20px;
 }
-#middle main{
+#middle .main{
   width:1226px;
   margin: 0 auto;
   height: 100%;
@@ -32,12 +32,17 @@ body{
   max-height:840px; 
   font-size: 14px;
   display: flex;
+  display: -ms-flexbox;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap:wrap;
 }
 .caseBox{
-  flex:0 1;
+  min-width:386px; 
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
   border: 1px solid #cfcfcf;
   margin: 10px;
   padding: 10px 12px;
@@ -58,6 +63,10 @@ body{
   width: 360px;
   height: 260px;
   object-fit: cover;
+}
+.caseBox .casePic video{
+  width: 360px;
+  height: 260px;
 }
 .caseFont p{
   max-width: 360px;
