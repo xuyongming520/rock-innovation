@@ -3,6 +3,7 @@ $(function(){
   business()
   company()
   science()
+  $(".weChatLogo").hide()
 })
 
 function isIE() { //ie?

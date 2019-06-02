@@ -191,9 +191,12 @@ body{
   border: 0px;
 }
 .proBox .proFont p{
-  margin: 10px auto 15px;
+  margin: 10px 10px 15px 10px;
   font-size: 20px;
   text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .proBox .proFont .detail{
   margin: 20px 0px;

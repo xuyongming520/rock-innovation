@@ -4,6 +4,17 @@ $(function(){
 })
 
 function proList(){
+  document.onkeydown = function() {
+    var evt = window.event || arguments[0];
+    if (evt && evt.keyCode == 13) {
+        if (typeof evt.cancelBubble != "undefined")
+            evt.cancelBubble = true;
+        if (typeof evt.stopPropagation == "function")
+            evt.stopPropagation();
+　　　　　return false;
+    }
+    return true;
+  }
   classId=0;
   $("#all").addClass("classFont");
   $("#soft").removeClass("classFont");

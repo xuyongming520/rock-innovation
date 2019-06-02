@@ -1,3 +1,7 @@
+$(function(){
+  $(".weChatLogo").hide()
+})
+
 $("#news").click(
   function(){
     window.location.href="news.html"
@@ -50,6 +54,16 @@ $("#policeLogo").click(
 $("#FooterInfoLogo").click(
   function(){
     window.location.href="../index.html"
+  }
+)
+
+$(".weChat img").mouseover(
+  function(){
+    $(".weChatLogo").show()
+  }
+).mouseout(
+  function(){
+    $(".weChatLogo").hide()
   }
 )
 

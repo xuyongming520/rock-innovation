@@ -143,7 +143,7 @@ li, ul {
 /*商品介绍*/
 
 .productDetail{
-  width: 90%;
+  width: 100%;
   min-height: 150px;
   padding: 10px 30px;
   /* margin: 50px; */

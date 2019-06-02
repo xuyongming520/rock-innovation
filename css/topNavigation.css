@@ -31,6 +31,31 @@
 #TopNavigationCompany{
   float: left;
 }
+.weChat{
+  float:left;
+}
+.weChat img{
+  width: 25px;
+  height:25px;
+  margin-left:20px;
+  margin-top:35px;
+}
+.weChatLogo{
+  float:left;
+  position: relative;
+  top:100px;
+  left:-150px;
+  height: 150px;
+  width:150px;
+  border-radius: 5px 5px 5px 5px;
+  background: #fff;
+  padding:11px;
+  
+}
+.weChatLogo img{
+  height:128px;
+  width: 128px;
+}
 #TopNavigationCompany a{
   text-decoration: none;
   color:white;

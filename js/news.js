@@ -74,15 +74,25 @@ function newsList(){
       name:"",
     },
     success:function(res){
-      var i=0,index=res.data.list.length,pageNum=res.data.totalPage,current=res.data.currentPage;
+      var i=0,status=null,index=res.data.list.length,pageNum=res.data.totalPage,current=res.data.currentPage;
       var list=new Array(),year=new Array(),month=new Array(),day=new Array();
       $(".newsList").empty() 
       for(i=0;i<index;i++){
         year[i]=res.data.list[i].releaseDate.substring(-1,4);
         month[i]=res.data.list[i].releaseDate.substring(5,7);
         day[i]=res.data.list[i].releaseDate.substring(8,10);
+        if(res.data.list[i].classId==1){
+          status="行业动态"
+        }
+        else if(res.data.list[i].classId==2){
+          status="公司动态"
+        }
+        else if(res.data.list[i].classId==3){
+          status="科研动态"
+        }
+        console.log(res.data.list[i].class)  
         list[i]="<li><a target='_blank' href='newsDetail.html?pkId="+res.data.list[i].pkId+"'>"
-                +res.data.list[i].title
+                +res.data.list[i].title+"<span>("+status+")</span>"
                 +"</a><span class='newsDate'>"
                 +year[i]+"/"
                 +month[i]+"/"
